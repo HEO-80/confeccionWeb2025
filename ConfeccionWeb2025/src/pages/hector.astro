@@ -1,0 +1,59 @@
+---
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio | Héctor</title>
+    <style>
+      .galeria {
+        display: flex;
+        width: 100%;
+        max-width: 900px;
+        height: 430px;
+        margin-top: 3rem;
+        overflow: hidden;
+      }
+
+      .galeria img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.7;
+        transition: 0.8s ease;
+        height: 100%;
+      }
+
+      .galeria img:hover {
+        cursor: pointer;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <Navbar />
+
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-5xl font-extrabold text-cyan-400">Hola, soy Héctor</h1>
+      <p class="mt-6 text-xl max-w-xl text-gray-300">
+        Hoy es un gran día para crecer, aprender algo nuevo y avanzar hacia tus sueños. ¡Tú puedes con todo! 💪✨
+      </p>
+
+      <!-- Galería con efecto -->
+      <section class="galeria">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.8bJFmvKtKxwIfCFt4drjdwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
+        <img src="https://getwallpapers.com/wallpaper/full/9/8/8/529635.jpg" alt="" />
+        <img src="https://tse1.mm.bing.net/th/id/OIP.8x9F0DxP1HeaN1AQ4xKxvAHaEA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
+        <img src="https://wallpapercave.com/wp/wp2577612.jpg" alt="" />
+        <img src="https://tse4.mm.bing.net/th/id/OIP.0PnZm9Msk0CNeu5VZadVqQHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
+        <img src="https://tse1.mm.bing.net/th/id/OIP.8-3tz7AdzJHIZy75mulCFgHaF7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
+        <img src="https://tse2.mm.bing.net/th/id/OIP.W82clLaM9EXShhUFlhP3LAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
+        <img src="https://wallpaperaccess.com/full/1104075.jpg" alt="" />
+      </section>
+    </main>
+  </body>
+</html>

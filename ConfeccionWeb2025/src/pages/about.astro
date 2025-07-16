@@ -1,0 +1,68 @@
+---
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sobre el curso</title>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <Navbar />
+
+    <main class="flex-1 px-6 py-12 max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-8">
+        Curso de Confección y Publicación de Páginas Web
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-300 mb-6">
+        Este curso ha sido una experiencia increíble, llena de aprendizaje, creatividad y crecimiento personal.
+        Desde los fundamentos hasta tecnologías modernas, hemos recorrido un camino apasionante.
+      </p>
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg mt-10">
+        <h2 class="text-2xl font-bold text-cyan-300 mb-4">🔧 Tecnologías aprendidas</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center text-center text-sm text-white">
+          <div>
+            <img src="https://cdn.simpleicons.org/html5/ef652a" class="w-10 h-10 mx-auto mb-2" alt="HTML" />
+            HTML
+          </div>
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/2048px-Official_CSS_Logo.svg.png" class="w-10 h-10 mx-auto mb-2" alt="CSS" />
+            CSS
+          </div>
+          <div>
+            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" class="w-10 h-10 mx-auto mb-2" alt="Tailwind" />
+            Tailwind CSS
+          </div>
+          <div>
+            <img src="https://cdn.simpleicons.org/javascript/f7df1e" class="w-10 h-10 mx-auto mb-2" alt="JavaScript" />
+            JavaScript
+          </div>
+          <div>
+            <img src="https://cdn.simpleicons.org/astro/ff5d01" class="w-10 h-10 mx-auto mb-2" alt="Astro" />
+            Astro
+          </div>
+          <div>
+            <img src="https://cdn.simpleicons.org/bootstrap/7952b3" class="w-10 h-10 mx-auto mb-2" alt="Bootstrap" />
+            Bootstrap
+          </div>
+          <div>
+            <img src="https://cdn.simpleicons.org/greensock/88CE02" class="w-10 h-10 mx-auto mb-2" alt="GSAP" />
+            GSAP
+          </div>
+          <div>
+            <span class="text-3xl">✨</span>
+            ¡Y más!
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-10 text-xl text-cyan-300 font-semibold">
+        Hemos creado y publicado nuestras propias páginas web, aplicando todo lo aprendido.
+        Ha sido un curso lleno de emociones, esfuerzo y transformación. ¡Gracias por ser parte de este viaje digital! 🚀
+      </p>
+    </main>
+  </body>
+</html>
