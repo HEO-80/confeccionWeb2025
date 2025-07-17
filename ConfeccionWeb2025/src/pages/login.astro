@@ -1,0 +1,22 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/layout.astro"; // con mayúscula y bien ubicado
+import AuthBox from "../components/AuthBox.astro"; // con mayúscula y bien ubicado
+---
+
+<Layout title="Iniciar sesión | Kins Corner">
+
+     
+      <AuthBox />
+
+      <!-- Botón Google -->
+      <div class="flex justify-center mt-6">
+        <button class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 17h-3v-6h3v6zm0-7.5h-3V8h3v3.5z"/>
+          </svg>
+          <span class="text-gray-200 font-medium">Continuar con Google</span>
+        </button>
+      </div>
+  
+</Layout>
